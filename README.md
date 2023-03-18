@@ -15,7 +15,7 @@ Yukarida verilen liste ile ilgili asagidaki sorulari yanitlayiniz.
 
 Soru-2: 
 
-# verilen liste
+verilen liste: 
 listem2 = ["Ali", "Veli", ["Ayşe", "Nazan", "Zeynep"], 34, 65, 33, 5.6,"elma","Hollanda"]
 
 
