@@ -1,0 +1,15 @@
+#Oplossing-1
+
+listem = [2, 12, 9, 50, 7, 66, 91, 14, 143, 23, 48, 19, 100, 71, 28]
+YeniSAyi = int(input("Bir sayi giriniz:\n")) #Kullanicidan bir sayi girmesini istiyorum.
+listem.insert(0, YeniSAyi) # Bu sayiyi verilen listenin ilk elemani olacak sekilde listeye ekledim.
+OddNumbers = []
+Copylistem = list(listem) #for dongusu ile 'listem' icinde islem yapacagimiz ve elemanlardan tek sayilari dongu sirasinda silecegim icin ek bir liste olusturdum. 
+for i in listem:
+    if i % 2 != 0:
+        Copylistem.remove(i) # Olusan yeni listenin icindeki tekli sayilari listeden cikardim.
+        OddNumbers.append(i)  # Sonrasinda yeni bir liste olusturdum.
+Copylistem.sort(reverse=True) # Her iki listeyi buyukten kucuge olacak sekilde siralayip ekrana yazdirdim.
+OddNumbers.sort(reverse=True)
+print(OddNumbers, Copylistem, sep=("\n"))
+
