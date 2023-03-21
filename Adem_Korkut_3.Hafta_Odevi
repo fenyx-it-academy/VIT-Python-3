@@ -1,0 +1,34 @@
+# 3. Hafta odevi 
+    # Soru 1:
+
+listem = [2,12, 9, 50, 7, 66,91,14, 143,23, 48, 19,100,71,28]
+kullanici = int(input("Bir sayi giriniz:"))
+listem.insert (0,kullanici) # Kullanicinin girdigi sayiyi listenin basina eklemek icin insert fonksiyonunu kullandim. Parantez icindeki 0 konumu belirtirken, ikinci parametre kullanicidan alinan veriyi kapsar.
+print("Listem:", listem)
+tek_sayilar= []
+for i in listem:
+    if (i % 2 !=0):
+        tek_sayilar.append(i)
+        tek_sayilar.sort(reverse=True)
+print("Tek_sayilar:", tek_sayilar)
+
+    # Soru 2:
+
+listem2 = ["Ali", "Veli", ["Ayşe", "Nazan", "Zeynep"], 34, 65, 33, 5.6,"elma","Hollanda"]
+print(listem2 [2] [1])
+print(listem2 [-1])
+sayilar= []
+for i in listem2:
+    if isinstance (i,(int,float)): # Burada for dongusu kurarak i'nin dongu icinde sayilara gelince bunlari bir listeye atamasini istedim
+                                    #Bu kodu ilk once su sekilde yazdim fakat kod hata verdi 
+                                    # for i in listem2:
+                                    #   if (i == int or i == float):
+                                    #       sayilar.append(i)
+                                    # hatanin sebebini arastirdigimda bu istegimi isinstance fonksiyonu ile yapabilecegimi ogrendim ve inu kullandim.
+    
+        
+        sayilar.append(i)
+print(sayilar)
+print("Sayilar kumesi:", len(sayilar), "elemanlidir.")
+liste3= [i for i in range(0,10)]
+print(liste3)
