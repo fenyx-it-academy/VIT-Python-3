@@ -1,0 +1,57 @@
+# Soru-1:
+# listem = [2,12, 9, 50, 7, 66,91,14, 143,23, 48, 19,100,71,28]
+# Yukarida verilen liste ile ilgili asagidaki sorulari yanitlayiniz.
+# 1-a: Kullanicidan bir sayi girmesini isteyiniz,
+# 1-b: Bu sayiyi verilen listenin ilk elemani olacak sekilde listeye ekleyiniz.
+# 1-c: Olusan yeni listenin icindeki tekli sayilari listeden cikarip tekli_sayilar adinda yeni bir liste olusturunuz.
+# 1-d: Her iki listeyi buyukten kucuge olacak sekilde siralayip ekrana yazdiriniz.
+
+listem = [2,12, 9, 50, 7, 66,91,14, 143,23, 48, 19,100,71,28]
+
+sayi = int(input("Lutfen bir sayi giriniz :"))
+
+listem.insert(0, sayi) #insert ile istedigimiz yere kullanicidan aldigimiz sayiyi yerlestirebiliriz.
+
+print(listem)
+
+tekli_sayilar = []
+
+
+for i in listem:
+    if i % 2 != 0 :
+        tekli_sayilar.append(i)
+        listem.remove(i)
+    
+print(tekli_sayilar)
+
+listem.sort()
+print(listem)
+
+tekli_sayilar.sort()
+print(tekli_sayilar)   
+
+# Soru-2:
+# 2-a: Verilen listenin icerisindeki "Nazan" elemanina ulasip print ediniz.
+# 2-b: Listenin son elemanina ulasip, print ediniz.
+# 2-c: Verilen listenin icerisindeki 34, 65, 33, 5.6 elemanlarina erisip, bu elemanlari yeni bir liste yapiniz.
+# 2-d: Yeni listenin eleman sayisini yazdiriniz.
+# 2-e: List Comprehensions (liste uretecleri) metodu ile, 10 elemanli bir liste olusturunuz.  
+
+listem2 = ["Ali", "Veli", ["Ayşe", "Nazan", "Zeynep"], 34, 65, 33, 5.6,"elma","Hollanda"]
+
+print(listem2[2][1]) #liste icinde bir liste daha olmasi o listenin icindekileri ayri ayri indeks olarak almiyor 1 index kabul ediyor.
+
+print(listem2[-1])
+
+yeni_liste = [x for x in listem2 if x in listem2[3:7]] #burada tek satirda islem yapmak daha kolay ve akilda kalici.
+
+# for i in listem2[3:7]:
+    
+#         yeni_liste.append(i) bu fonksiyon ile de yapiliyor ancak daha fazla satir ve islem gerektirdigi icin bunu kullanmadim
+        
+print(yeni_liste)
+
+print("Yeni_liste uzunlugu :" , len(yeni_liste))
+
+son_liste = [i for i in range(10)]
+print(son_liste)
