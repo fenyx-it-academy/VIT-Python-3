@@ -1,0 +1,45 @@
+#1.Soru
+
+listem = [2,12, 9, 50, 7, 66,91,14, 143,23, 48, 19,100,71,28]
+
+
+#Kullanicidan bir sayi girmesi istendi. 
+# Bu sayi olusturulan listenini 0'inci indexine eklendi.
+a = int(input("Lutfen bir sayi girin:"))
+listem.insert(0,a)
+print(listem)
+
+#tekli_sayilar isimli yeni liste olusturuldu ve 
+# listem adli listedeki tek olan sayilar yeni listeye eklendi.
+tekli_sayilar = [x for x in listem if x % 2 != 0]
+
+#listen ve tekli_sayilar adli listeler 
+# sort metodu ile kucukten buyuge siralandi
+# reverse metodu ile buyukten kucuge siralandi 
+# veya liste index metodu ile tersten print ettirildi.
+listem.sort()
+tekli_sayilar.sort()
+#listem.reverse()
+#tekli_sayilar.reverse()
+print(listem[::-1], tekli_sayilar[::-1], sep="\n")
+
+
+#2.Soru
+listem2 = ["Ali", "Veli", ["Ayşe", "Nazan", "Zeynep"], 34, 65, 33, 5.6,"elma","Hollanda"]
+
+#Listem2' nin "Nazan" adli elemanina ulasip print yapildi.
+print(listem2[2][1])
+
+#Listenin son elemanina ulasip print ettirildi.
+print(listem2[-1])
+
+# Listem2' nin icerisinde bulanan int ve float tipindeki veriler
+#yeni bir lsiteye aktarildi.
+
+yeni_liste = listem2[3:7]
+print(yeni_liste)
+print(len(yeni_liste))
+
+#List Comprehensions metodu ile 10 elemanli bir liste olusturuldu.
+liste = [x for x in range(0,20) if x % 2 == 0]
+print(len(liste),liste)
