@@ -7,7 +7,7 @@ listem.insert(0,my_number)
 #1-c:
 tekli_sayilar=[i for i in listem if i % 2 == 1]
 #1-d:
-print(sorted(listem), sorted(tekli_sayilar), sep="\n")
+print(sorted(listem, reverse=True), sorted(tekli_sayilar, reverse=True), sep="\n")
 
 
 #Soru-2 (Not: Listeye yeni elemanlar ekledim.)
