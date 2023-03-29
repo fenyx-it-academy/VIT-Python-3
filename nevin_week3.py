@@ -1,4 +1,4 @@
-cevap1
+#cevap1
 # Kullanicidan bir sayi girmesini istiyoruz
 listem = [2,12, 9, 50, 7, 66,91,14, 143,23, 48, 19,100,71,28]
 number=int(input("Bir sayi giriniz:"))
@@ -19,7 +19,7 @@ print("Tekli sayilar buyukten kucuge ",tekli_sayilar[::-1])
 print("listem buyukten kucuge:", listem[::-1])
 
 
-cevap2
+#cevap2
 listem2 = ["Ali", "Veli", ["Ayşe", "Nazan", "Zeynep"], 34, 65, 33, 5.6,"elma","Hollanda"]
 #Verilen listenin icerisindeki "Nazan" elemanina ulasip print ediyoruz
 print(listem2[2][1])
